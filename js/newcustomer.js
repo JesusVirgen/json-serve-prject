@@ -1,5 +1,5 @@
 import { showAlert } from './functions.js';
-import { newCostumer } from './API.js';
+import { newCustomer } from './API.js';
 
 (function() {
     const form = document.querySelector('#form');
@@ -25,7 +25,7 @@ import { newCostumer } from './API.js';
             return;
         }
 
-        newCostumer(customer);
+        newCustomer(customer);
     }
 
     function validInputs(obj) {

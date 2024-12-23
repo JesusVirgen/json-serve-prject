@@ -1,7 +1,7 @@
 const url = 'http://localhost:4000/customers';
 
-export const newCostumer = async customer => {
-
+export const newCustomer = async customer => {
+    debugger
     try {
         await fetch(url, {
             method: 'POST',
@@ -10,7 +10,8 @@ export const newCostumer = async customer => {
                 'Content-Type': 'application/json'
             }
         })
-        window.location.href = 'index.html';
+        debugger
+        window.location.pathname = '/index.html';
     } catch (error) {
         console.log(error)
     }
