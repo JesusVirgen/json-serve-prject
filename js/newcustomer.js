@@ -1,4 +1,4 @@
-import { showAlert } from './functions.js';
+import { showAlert, validInputs } from './functions.js';
 import { newCustomer } from './API.js';
 
 (function() {
@@ -26,9 +26,5 @@ import { newCustomer } from './API.js';
         }
 
         newCustomer(customer);
-    }
-
-    function validInputs(obj) {
-        return !Object.values(obj).every(input => input !== '');
     }
 })();
